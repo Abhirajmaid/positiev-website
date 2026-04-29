@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-white: #ffffff;
+  --color-brand-dark: #1e1e1e;
+  --color-brand-medium: #797979;
+  --color-brand-light: #f2f2f2;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-brand-white);
+  color: var(--color-brand-dark);
+}
+
+* {
+  border-color: rgb(30 30 30 / 0.12);
+}
+
+::selection {
+  background: rgb(30 30 30 / 0.18);
+  color: var(--color-brand-dark);
+}
