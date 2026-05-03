@@ -87,13 +87,12 @@ function ReviewAvatars() {
 
 export function ExperienceSection() {
   return (
-    <section className="bg-brand-white py-16 md:py-20">
+    <section id="solutions" className="bg-brand-white py-16 md:py-20">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-4xl font-semibold leading-[0.98] text-brand-dark md:text-6xl">
-            Experience Excellence
-            <br />
-            In Real Estate
+            About Positiev
+            
           </h2>
         </div>
 
@@ -101,30 +100,36 @@ export function ExperienceSection() {
           {/* Left copy */}
           <div className="md:col-span-4">
             <h3 className="text-[20px] font-semibold leading-snug text-brand-dark">
-              Your Trusted Partner in Finding the
+              India&apos;s EV Distribution
               <br />
-              Perfect Home
+              &amp; Leasing Company
             </h3>
             <p className="mt-4 max-w-[48ch] text-[12px] leading-relaxed text-brand-medium">
-              At Luxura Real Estate, we believe that buying or selling a home
-              should be an exciting and stress-free experience.
+              PositiEV Mobility sits between EV manufacturers and the businesses
+              that use EVs. We help manufacturers sell more, help dealers run
+              profitably, and help fleets adopt EVs without the usual headaches
+              of cost, downtime, or maintenance.
+            </p>
+            <p className="mt-3 max-w-[48ch] text-[12px] leading-relaxed text-brand-medium">
+              In short — if you make EVs, sell EVs, or run EV fleets, we are
+              the one partner that makes it all work seamlessly.
             </p>
 
-            <button
-              type="button"
+            <a
+              href="#for-oems"
               className="mt-6 inline-flex items-center rounded-full bg-brand-dark px-6 py-3 text-[12px] font-semibold text-brand-white"
             >
-              About Us
-            </button>
+              See How It Works
+            </a>
 
             <div className="mt-14">
               <div className="text-[13px] font-semibold text-brand-dark/80">
-                Our Partner:
+                We Work With:
               </div>
               <div className="mt-5 flex flex-wrap items-center gap-x-10 gap-y-3">
-                <PartnerPill kind="polymath" label="Polymath" />
-                <PartnerPill kind="boltshift" label="Boltshift" />
-                <PartnerPill kind="quotient" label="Quotient" />
+                <PartnerPill kind="polymath" label="EV Manufacturers" />
+                <PartnerPill kind="boltshift" label="EV Dealers" />
+                <PartnerPill kind="quotient" label="EV Fleets" />
               </div>
             </div>
           </div>
@@ -135,7 +140,7 @@ export function ExperienceSection() {
               <div className="relative aspect-[4/5] w-full">
                 <Image
                   src="/sampleuse.jpg"
-                  alt="Property"
+                  alt="PositiEV Mobility"
                   fill
                   className="object-cover"
                   priority={false}
@@ -148,29 +153,33 @@ export function ExperienceSection() {
           <div className="md:col-span-4">
             <div className="space-y-6">
               <Feature
-                title="Expert Guidance"
-                description="Our experienced agents provide professional advice and personalized support."
+                title="We Distribute EVs"
+                description="We partner with EV manufacturers as their Master Dealer, building and managing dealer networks across India so their vehicles reach more customers."
               />
               <Divider />
               <Feature
-                title="Wide Property Selection"
-                description="From luxury homes to budget-friendly apartments, we have something for everyone."
+                title="We Lease EVs to Businesses"
+                description="Businesses get EVs on a simple monthly lease — no large upfront payment, no ownership headaches. We take care of the asset, they focus on their work."
               />
               <Divider />
+              <Feature
+                title="We Handle Charging &amp; Maintenance"
+                description="We set up charging at depots and handle all vehicle maintenance. If something breaks, we fix it — keeping fleets running and on-time, always."
+              />
             </div>
 
             <div className="mt-10">
               <div className="text-[12px] font-semibold text-brand-dark/75">
-                Reviews:
+                EV Manufacturer Partners:
               </div>
               <div className="mt-4 flex items-center gap-2">
                 <ReviewAvatars />
                 <div className="text-left">
                   <div className="text-[13px] font-semibold text-brand-dark">
-                    4.9
+                    5+
                   </div>
                   <div className="text-[12px] text-brand-dark/50">
-                    Customer Ratings
+                    OEM Partnerships &amp; Growing
                   </div>
                 </div>
               </div>

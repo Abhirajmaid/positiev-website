@@ -16,8 +16,25 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata = {
-  title: 'Positiev',
-  description: 'Positiev web app',
+  title: 'PositiEV Mobility — India\'s EV Distribution & Leasing Partner',
+  description:
+    "India's leading tech-enabled EV distribution and leasing company. We power dealer networks, OEM reach, and EV fleet backends through an integrated operating lease, charging, and maintenance platform.",
+  keywords: [
+    'EV distribution India',
+    'EV leasing',
+    'dealer franchise EV',
+    'operating lease EV',
+    'EV fleet management',
+    'DLF franchise',
+    'EV charging infrastructure',
+    'PositiEV Mobility',
+  ],
+  openGraph: {
+    title: 'PositiEV Mobility',
+    description: 'Redefining EV mobility in India — lease, charge, and maintain, all in one.',
+    url: 'https://www.positievmobility.com',
+    siteName: 'PositiEV Mobility',
+  },
 };
 
 export default function RootLayout({ children }) {

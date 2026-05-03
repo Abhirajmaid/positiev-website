@@ -3,47 +3,47 @@ import { Container } from '@/components/layout/Container';
 
 const listings = [
   {
-    title: 'The Grand Haven',
-    location: 'Beverly Hills, CA',
-    area: '2.100 ft',
-    beds: '5 Bed',
-    baths: '4 Bath',
+    title: 'Operating Lease (EV Assets)',
+    location: 'India-wide · 2W, 3W & 4W',
+    area: 'Lease-to-Own',
+    beds: 'All Vehicle Types',
+    baths: 'Monthly Billing',
     description:
-      'A luxurious modern home featuring high ceilings, an open-concept kitchen',
-    price: '$1,250,000',
+      'Fleets access EVs through a structured operating lease model. Vehicles are leased with an ownership pathway — no heavy capex, no liquidity crunch.',
+    price: 'From ₹X / month',
     image: '/sampleuse.jpg',
   },
   {
-    title: 'Ocean Breeze Villa',
-    location: 'Miami Beach, FL',
-    area: '4,500 ft',
-    beds: '6 Bed',
-    baths: '5 Bath',
+    title: 'Charging Infrastructure',
+    location: 'Depots · Dealerships · Cities',
+    area: 'Lease-based Setup',
+    beds: 'AC & DC Chargers',
+    baths: 'Revenue Share',
     description:
-      'A breathtaking beachfront villa with panoramic ocean views.',
-    price: '$2,300,000',
+      'We deploy and manage EV charging infrastructure on a lease model. Dealers and fleet depots gain a new revenue stream without upfront investment.',
+    price: 'Revenue Share Model',
     image: '/sampleuse.jpg',
   },
   {
-    title: 'Skyline Residence',
-    location: 'New York City, NY',
-    area: '1800 ft',
-    beds: '3 Bed',
-    baths: '3 Bath',
+    title: 'EV Maintenance & Uptime',
+    location: 'FOFO Service Centres',
+    area: 'Monthly Plans',
+    beds: 'Multi-brand Support',
+    baths: 'Spares Supply Chain',
     description:
-      'A sophisticated high-rise apartment in the heart of NYC, featuring floor-to-ceiling',
-    price: '$980,000',
+      'Committed maintenance contracts with uptime guarantees. Our FOFO service network supports all EV brands — including spares continuity even if the OEM faces challenges.',
+    price: 'Monthly Fixed Cost',
     image: '/sampleuse.jpg',
   },
   {
-    title: 'Greenfield Estate',
-    location: 'Austin, TX',
-    area: '2,700 ft',
-    beds: '4 Bed',
-    baths: '4 Bath',
+    title: 'DLF Franchise Development',
+    location: 'Pan-India · Pincode Clusters',
+    area: 'Multi-brand Showrooms',
+    beds: 'Exclusive Territories',
+    baths: 'Guaranteed ROI',
     description:
-      'A charming suburban estate surrounded by lush greenery, with spacious interiors.',
-    price: '$750,000',
+      'Build a high-return EV dealership business under PositiEV\'s franchise umbrella. We provide brand rights, inventory backing, financing access, and a multi-revenue playbook.',
+    price: 'Guaranteed Returns',
     image: '/sampleuse.jpg',
   },
 ];
@@ -189,6 +189,7 @@ function ListingCard({ item }) {
             <span>{item.location}</span>
           </div>
 
+
           <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
             <Meta icon="area" text={item.area} />
             <div className="h-3 w-px bg-black/15" />
@@ -202,7 +203,7 @@ function ListingCard({ item }) {
           </div>
 
           <div className="mt-5 text-[12px] text-brand-dark">
-            <span className="text-brand-dark/70">Price :</span>{' '}
+            <span className="text-brand-dark/70">Pricing :</span>{' '}
             <span className="ml-1 font-semibold text-brand-dark">{item.price}</span>
           </div>
         </div>
@@ -213,14 +214,15 @@ function ListingCard({ item }) {
 
 export function DiscoverSection() {
   return (
-    <section className="bg-brand-white py-16 md:py-20">
+    <section id="for-oems" className="bg-brand-white py-16 md:py-20">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-4xl font-semibold leading-[0.98] text-brand-dark md:text-6xl">
-            Discover Luxira Property
+            Our Service Offerings
           </h2>
           <p className="mx-auto mt-4 max-w-[52ch] text-[12px] leading-relaxed text-brand-medium">
-            Handpicked residences where luxury, design, and comfort meet.
+            A tech-enabled suite covering every dimension of EV fleet ownership
+            and dealer franchise operations across India.
           </p>
         </div>
 
@@ -231,12 +233,12 @@ export function DiscoverSection() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <button
-            type="button"
+          <a
+            href="#contact"
             className="inline-flex items-center rounded-full bg-brand-dark px-7 py-3 text-[12px] font-semibold text-brand-white"
           >
-            See All Property
-          </button>
+            Partner With Us
+          </a>
         </div>
       </Container>
     </section>

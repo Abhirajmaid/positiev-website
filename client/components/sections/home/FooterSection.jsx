@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { Container } from '@/components/layout/Container';
@@ -23,42 +24,42 @@ function ActionCard({ title, description }) {
 
 export function FooterSection() {
   return (
-    <section className="bg-black pb-10 pt-0 md:pb-12">
+    <section id="contact" className="bg-black pb-10 pt-0 md:pb-12">
       <Container>
         {/* Connect panel */}
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#1f2023] p-8 shadow-[0_26px_90px_rgba(0,0,0,0.35)] md:p-9">
           <div className="grid items-start gap-10 md:grid-cols-12 md:gap-10">
             <div className="md:col-span-8">
               <h2 className="font-serif text-4xl font-semibold leading-[0.98] text-brand-white md:text-[50px]">
-                <span className="md:whitespace-nowrap">Connect With Us To</span>
+                <span className="md:whitespace-nowrap">Partner With PositiEV</span>
                 <br />
-                <span className="md:whitespace-nowrap">Discover Exclusive Real</span>
+                <span className="md:whitespace-nowrap">to Unlock India&apos;s</span>
                 <br />
-                <span className="md:whitespace-nowrap">Estate Opportunities.</span>
+                <span className="md:whitespace-nowrap">EV Opportunity.</span>
               </h2>
 
               <div className="mt-14 flex max-w-[430px] items-center rounded-full border border-white/20 bg-[#2d3037] p-1">
                 <input
-                  placeholder="Find your dream house right now"
+                  placeholder="Your business email address"
                   className="w-full bg-transparent px-4 text-[12px] text-brand-white/80 placeholder:text-brand-white/35 focus:outline-none"
                 />
                 <button
                   type="button"
                   className="shrink-0 rounded-full bg-brand-light px-8 py-2 text-[13px] font-semibold text-brand-dark"
                 >
-                  Subscribe
+                  Enquire Now
                 </button>
               </div>
             </div>
 
             <div className="space-y-4 md:col-span-4 md:pt-1">
               <ActionCard
-                title="Free Consultation"
-                description="Our consultation service lets you discuss your real estate needs."
+                title="Become a DLF Franchisee"
+                description="Join our growing network of Dealer Lessor Franchisees across India and unlock guaranteed returns."
               />
               <ActionCard
-                title="Make an Appointment"
-                description="Book your appointment today and take the next step toward your real estate goals with Luxira."
+                title="OEM or NBFC Partnership"
+                description="Explore Master Dealer agreements and co-financing opportunities with PositiEV Mobility."
               />
             </div>
           </div>
@@ -67,28 +68,28 @@ export function FooterSection() {
         {/* Footer */}
         <footer className="mt-10 pt-6">
           <div className="flex items-center justify-between border-b border-white/10 pb-8">
-            <div className="flex items-center gap-3 text-brand-white">
-              <span className="grid h-8 w-8 place-items-center rounded-full border border-white/15 bg-white/5">
-                <Icon icon="mdi:home-outline" className="h-4 w-4 text-[#E2C98C]" />
-              </span>
-              <span className="font-serif text-[24px] font-semibold">
-                LeonHome
-              </span>
-            </div>
+            <Link href="/" className="flex shrink-0 items-center">
+              <Image
+                src="/logo_2.png"
+                alt="PositiEV Mobility"
+                width={200}
+                height={48}
+                className="h-9 w-auto max-w-[min(200px,52vw)] object-contain object-left md:h-10"
+              />
+            </Link>
 
             <nav className="hidden items-center gap-10 text-[18px] text-brand-white md:flex">
-              <Link href="#" className="hover:text-brand-white">
+              <Link href="/" className="hover:text-brand-white">
                 Home
               </Link>
-              <Link href="#" className="hover:text-brand-white">
-                About Us
+              <Link href="#solutions" className="hover:text-brand-white">
+                Solutions
               </Link>
-              <Link href="#" className="hover:text-brand-white">
-                Property
-                <Icon icon="mdi:chevron-down" className="ml-1 inline h-4 w-4" />
+              <Link href="#for-dealers" className="hover:text-brand-white">
+                For Dealers
               </Link>
-              <Link href="#" className="hover:text-brand-white">
-                Services
+              <Link href="#team" className="hover:text-brand-white">
+                Team
               </Link>
             </nav>
           </div>
@@ -101,32 +102,38 @@ export function FooterSection() {
               <div className="space-y-3 text-[13px] text-brand-white">
                 <div className="flex items-center gap-3">
                   <Icon icon="mdi:phone-outline" className="h-4 w-4" />
-                  <span>[+01] 334-998-0934</span>
+                  <span>+91 81307 55275</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon icon="mdi:email-outline" className="h-4 w-4" />
-                  <span>contact@luxiraestate.com</span>
+                  <span>hiten@positievmobility.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon icon="mdi:web" className="h-4 w-4" />
+                  <span>www.positievmobility.com</span>
                 </div>
               </div>
             </div>
 
             <div className="space-y-3 md:w-[24%]">
               <div className="text-[16px] font-semibold text-brand-white">
-                Our Location
+                Our Presence
               </div>
               <div className="text-[13px] leading-relaxed text-brand-white">
-                123 Stadium Avenue, Sport City, Zip Code 45678
+                Pan-India operations. Currently establishing in key metros with
+                plans to cover 25+ locations by 2027.
               </div>
             </div>
 
             <div className="space-y-3 md:w-[24%]">
               <div className="text-[16px] font-semibold text-brand-white">
-                Properties
+                Solutions
               </div>
               <div className="space-y-2 text-[13px] text-brand-white">
-                <div>Featured Listings</div>
-                <div>Luxury Homes</div>
-                <div>Apartments for Sale</div>
+                <div>Operating Lease</div>
+                <div>Charging Infrastructure</div>
+                <div>EV Maintenance</div>
+                <div>DLF Franchise</div>
               </div>
             </div>
 
@@ -135,7 +142,8 @@ export function FooterSection() {
                 Company
               </div>
               <div className="space-y-2 text-[13px] text-brand-white">
-                <div>Our Agents</div>
+                <div>About Us</div>
+                <div>Team</div>
                 <div>FAQs</div>
                 <div>Careers</div>
               </div>
@@ -143,7 +151,7 @@ export function FooterSection() {
           </div>
 
           <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-[12px] text-brand-white/85 md:flex-row md:items-center">
-            <div>© 2025 LeonHome real estate All rights reserved.</div>
+            <div>© 2026 PositiEV Mobility. All rights reserved.</div>
             <div className="flex items-center gap-2">
               <span>Terms &amp; Conditions</span>
               <span className="text-white/20">|</span>

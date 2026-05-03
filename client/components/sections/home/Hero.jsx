@@ -20,7 +20,7 @@ export function Hero() {
         style={{ textShadow: '0 6px 28px rgba(255,255,255,0.14)' }}
         aria-hidden="true"
       >
-        LEONHOME
+        POSITIEV
       </div>
 
       {/* Layer 3 (z-2): house image covering lower area for depth illusion */}
@@ -49,12 +49,12 @@ export function Hero() {
             Since 2026
           </div>
 
-          <h1 className="mt-2 max-w-[42vw]  font-semibold leading-[0.95] tracking-[-0.02em] text-white md:text-[25px]">
-            UPGRADE YOUR
+          <h1 className="mt-2 max-w-[42vw] font-semibold leading-[0.95] tracking-[-0.02em] text-white md:text-[25px]">
+            INDIA&apos;S LEADING
             <br />
-            LIFE WITH SMART HOME
+            EV DISTRIBUTION &amp;
             <br />
-            TECHNOLOGY
+            LEASING PLATFORM
           </h1>
         </div>
 
@@ -63,58 +63,58 @@ export function Hero() {
             className="text-[9px] uppercase leading-snug tracking-[0.34em] text-white/55"
             style={{ writingMode: 'vertical-rl' }}
           >
-            Step Into The Future Of Living
+            Empowering Dealers, OEMs &amp; Fleets
           </div>
         </div>
 
         <div className="absolute bottom-14 right-4 hidden w-[500px] md:block lg:right-6">
           <div className="w-[230px] rounded-[20px] border border-white/10 bg-black/45 p-5 backdrop-blur-[20px]">
-            <div className="text-[42px] font-semibold leading-none text-white">5.9K+</div>
+            <div className="text-[42px] font-semibold leading-none text-white">₹100 Cr+</div>
             <p className="mt-4 max-w-[16ch] text-[13px] leading-relaxed text-white/85">
-              Successfully delivering innovative projects around the world.
+              Revenue pipeline already in motion from day one.
             </p>
           </div>
 
           <div className="ml-auto mt-4 w-[230px] rounded-[20px] border border-white/10 bg-black/45 p-5 backdrop-blur-[20px]">
-            <div className="text-[42px] font-semibold leading-none text-white">10K+</div>
+            <div className="text-[42px] font-semibold leading-none text-white">5 OEM+</div>
             <p className="mt-4 text-[13px] leading-relaxed text-white/85">
-              Award-winning innovative projects delivered globally.
+              Manufacturing partners across 2W, 3W &amp; 4W segments.
             </p>
           </div>
         </div>
 
         <div className="absolute inset-x-4 bottom-28 grid gap-4 md:hidden">
           <div className="rounded-[20px] border border-white/10 bg-black/45 p-4 backdrop-blur-[20px]">
-            <div className="text-3xl font-semibold leading-none text-white">5.9K+</div>
+            <div className="text-3xl font-semibold leading-none text-white">₹100 Cr+</div>
             <p className="mt-2 text-xs text-white/85">
-              Successfully delivering innovative projects around the world.
+              Revenue pipeline already in motion from day one.
             </p>
           </div>
           <div className="rounded-[20px] border border-white/10 bg-black/45 p-4 backdrop-blur-[20px]">
-            <div className="text-3xl font-semibold leading-none text-white">10K+</div>
+            <div className="text-3xl font-semibold leading-none text-white">5 OEM+</div>
             <p className="mt-2 text-xs text-white/85">
-              Award-winning innovative projects delivered globally.
+              Manufacturing partners across 2W, 3W &amp; 4W segments.
             </p>
           </div>
         </div>
 
         <div className="absolute inset-x-0 bottom-8 flex justify-center px-4">
-          <button
-            type="button"
+          <a
+            href="#solutions"
             className="inline-flex items-center rounded-full border border-white/20 bg-white p-1 text-[18px] font-semibold text-black shadow-[0_18px_40px_rgba(0,0,0,0.35)] transition duration-300 hover:scale-[1.03] hover:shadow-[0_22px_52px_rgba(0,0,0,0.45)]"
           >
-            <span className="px-8 py-3">DISCOVER MORE</span>
+            <span className="px-8 py-3">EXPLORE SOLUTIONS</span>
             <span className="grid h-[52px] w-[52px] place-items-center rounded-full bg-black text-white">
               <Icon icon="mdi:arrow-top-right" className="h-5 w-5" />
             </span>
-          </button>
+          </a>
         </div>
 
         <div className="absolute bottom-8 left-4 max-w-[230px] text-[9px] uppercase tracking-[0.2em] text-white/55 md:left-6">
-          We Power Comfort, Protection, And Fun With Smart Technology.
+          Operating Lease · Charging Infrastructure · Maintenance
         </div>
         <div className="absolute bottom-8 right-4 text-[9px] uppercase tracking-[0.2em] text-white/55 md:right-6">
-          Welcome To The Future Of Living
+          India&apos;s Largest EV Distributor by 2030
         </div>
       </div>
     </section>

@@ -137,39 +137,44 @@ function IconBath({ className = '' }) {
 const properties = [
   {
     id: 'left',
-    badge: 'Available Property',
-    title: 'Modern Family Home',
-    price: '$4,500,00',
+    badge: 'Partnership Model',
+    title: 'For OEMs — Master Dealer & Lessor',
+    price: 'MDL Agreement',
     description:
-      'A stunning modern home with open living space, a private pool, and a spacious backyard.',
+      'PositiEV buys vehicles in bulk, develops exclusive dealer territories, and builds multi-brand service centres — giving OEMs reliable nationwide distribution without fragile single-brand dealership risk.',
     meta: [
-      { icon: 'mdi:floor-plan', label: '2.100m²' },
-      { icon: 'mdi:bed-outline', label: '6 Bed' },
-      { icon: 'mdi:bathtub-outline', label: '3 Bath' },
+      { icon: 'mdi:floor-plan', label: '2W · 3W · 4W' },
+      { icon: 'mdi:bed-outline', label: 'Bulk Procurement' },
+      { icon: 'mdi:bathtub-outline', label: 'Pincode Clusters' },
     ],
     image: '/sampleuse.jpg',
   },
   {
     id: 'center',
-    badge: 'Available Property',
-    title: 'Modern Family Home',
-    price: '$4,500,00',
+    badge: 'Franchise Model',
+    title: 'For Dealers — DLF Franchise',
+    price: 'Guaranteed ROI',
     description:
-      'A stunning modern home with open living space, a private pool, and a spacious backyard.',
+      'Become a Dealer Lessor Franchisee (DLF) and unlock guaranteed returns on inventory, access to multiple OEM brands, rental partnerships, and charging infrastructure revenue — all backed by PositiEV\'s central support.',
     meta: [
-      { icon: 'mdi:floor-plan', label: '2.100m²' },
-      { icon: 'mdi:bed-outline', label: '6 Bed' },
-      { icon: 'mdi:bathtub-outline', label: '3 Bath' },
+      { icon: 'mdi:floor-plan', label: 'Multi-brand Showroom' },
+      { icon: 'mdi:bed-outline', label: 'Inventory Backing' },
+      { icon: 'mdi:bathtub-outline', label: 'Revenue Streams' },
     ],
     image: '/sampleuse.jpg',
   },
   {
     id: 'right',
-    badge: 'Available Property',
-    title: 'Luxury Beachfront Villa',
-    price: '$1,620,00',
-    description: 'A breathtaking villa with ocean views and premium finishes.',
-    meta: [],
+    badge: 'Fleet Solution',
+    title: 'For Fleets — Operating Lease Backend',
+    price: 'All-in-One',
+    description:
+      'Scale your EV fleet without capital strain. PositiEV handles vehicle leasing, on-site charging, and proactive maintenance — backed by committed uptime SLAs so your operations never miss a beat.',
+    meta: [
+      { icon: 'mdi:floor-plan', label: 'Lease-to-Own' },
+      { icon: 'mdi:bed-outline', label: 'Charging Infra' },
+      { icon: 'mdi:bathtub-outline', label: 'Uptime SLA' },
+    ],
     image: '/sampleuse.jpg',
   },
 ];
@@ -274,7 +279,7 @@ function FeaturedCard({ item }) {
         </div>
       </div>
 
-      <div className="mt-5 flex items-start justify-between gap-6">
+        <div className="mt-5 flex items-start justify-between gap-6">
         <div>
           <div className="text-[18px] font-semibold text-brand-dark md:text-[20px]">
             {item.title}
@@ -303,12 +308,12 @@ function FeaturedCard({ item }) {
           <div className="text-[18px] font-semibold text-brand-dark md:text-[20px]">
             {item.price}
           </div>
-          <button
-            type="button"
+          <a
+            href="#contact"
             className="mt-6 inline-flex items-center rounded-full bg-brand-dark px-6 py-3 text-[12px] font-semibold text-brand-white"
           >
-            View Detail
-          </button>
+            Enquire Now
+          </a>
         </div>
       </div>
     </div>
@@ -324,14 +329,14 @@ export function DreamSection() {
   const right = items[(index + 1) % items.length];
 
   return (
-    <section className="bg-brand-white py-16 md:py-20">
+    <section id="for-dealers" className="bg-brand-white py-16 md:py-20">
       <Container>
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-center md:gap-8">
           <div className="w-full md:w-[300px] md:shrink-0">
             <h2 className="w-full font-serif text-4xl font-semibold leading-[0.98] text-brand-dark md:w-max md:text-[56px]">
-              <span className="md:whitespace-nowrap">Find Your Dream Home</span>
+              <span className="md:whitespace-nowrap">Solutions Built For</span>
               <br />
-              Today
+              Every EV Partner
             </h2>
           </div>
 
@@ -339,8 +344,8 @@ export function DreamSection() {
 
           <div className="w-full md:w-[300px] md:shrink-0 md:pt-5">
             <p className="max-w-[300px] text-[14px] leading-relaxed text-brand-medium md:text-[16px]">
-              Explore our latest listings in the most sought-after locations. we
-              have the perfect home for you.
+              Whether you are an OEM, a dealership, or an EV fleet operator —
+              PositiEV has a partnership model engineered for your growth.
             </p>
           </div>
         </div>

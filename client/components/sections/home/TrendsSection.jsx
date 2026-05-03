@@ -8,17 +8,47 @@ const slides = [
   {
     id: '1',
     image: '/sampleuse.jpg',
-    name: 'David Thompson',
-    role: 'Investment Banker',
-    company: 'Spherule',
-    headline: 'Purchased Property: The Grand Haven',
+    name: 'Fleet Operations Head',
+    role: 'B2B Logistics Client',
+    company: 'PositiEV Partner',
+    headline: 'Operating Lease + Maintenance — One Partner',
     quote:
-      '"Luxira Real Estate made the entire home-buying process seamless. The team was professional, and they found me the perfect modern home in Beverly Hills. Highly recommended!"',
+      '"PositiEV\'s integrated model eliminated our fleet management headaches overnight. Having lease, charging, and maintenance under a single SLA means we scale without worrying about downtime or defaults. Highly recommend for any serious fleet operator."',
     rating: 4.9,
   },
-  { id: '2', image: '/sampleuse.jpg' },
-  { id: '3', image: '/sampleuse.jpg' },
-  { id: '4', image: '/sampleuse.jpg' },
+  {
+    id: '2',
+    image: '/sampleuse.jpg',
+    name: 'DLF Franchisee',
+    role: 'Dealer Partner',
+    company: 'PositiEV DLF Network',
+    headline: 'Guaranteed Returns on EV Inventory',
+    quote:
+      '"Partnering as a DLF gave us guaranteed inventory backing, access to multiple OEM brands, and a revenue stream from charging infrastructure we never expected. PositiEV turned our dealership into a full EV ecosystem hub."',
+    rating: 4.8,
+  },
+  {
+    id: '3',
+    image: '/sampleuse.jpg',
+    name: 'OEM Sales Director',
+    role: 'Manufacturing Partner',
+    company: 'OEM Partner',
+    headline: 'Master Dealer & Lessor Agreement',
+    quote:
+      '"Working with PositiEV as our Master Dealer accelerated our distribution reach across pincode clusters we hadn\'t been able to crack. Their multi-brand service centre model gives our buyers confidence and keeps our brand reputation intact."',
+    rating: 5.0,
+  },
+  {
+    id: '4',
+    image: '/sampleuse.jpg',
+    name: 'NBFC Relationship Manager',
+    role: 'Co-Finance Partner',
+    company: 'NBFC Partner',
+    headline: 'Asset-backed Co-financing at Scale',
+    quote:
+      '"The PositiEV model is fundamentally different — maintenance is in their control, which directly reduces fleet default risk. That makes the asset quality for co-financing significantly better than anything else in the EV lending space."',
+    rating: 4.9,
+  },
 ];
 
 function Svg({ children, className = '' }) {
@@ -82,9 +112,9 @@ function IconStar({ className = '', filled }) {
   );
 }
 
-function SpheruleMark() {
+function PartnerMark() {
   return (
-    <span className="grid h-6 w-6 place-items-center rounded-full border border-black/10">
+    <span className="grid h-6 w-6 place-items-center rounded-full border border-black/10 bg-brand-accent/10">
       <svg
         viewBox="0 0 24 24"
         className="h-4 w-4"
@@ -92,16 +122,12 @@ function SpheruleMark() {
         aria-hidden="true"
       >
         <path
-          d="M12 3.2c4.9 0 8.8 3.9 8.8 8.8S16.9 20.8 12 20.8 3.2 16.9 3.2 12 7.1 3.2 12 3.2Z"
+          d="M3 17l5-8 4 6 3-4 6 6"
           fill="none"
-          stroke="#6D28D9"
-          strokeWidth="2"
-        />
-        <path
-          d="M7.2 12h9.6M12 7.2v9.6"
-          stroke="#6D28D9"
+          stroke="#16a34a"
           strokeWidth="2"
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </span>
@@ -163,15 +189,15 @@ export function TrendsSection() {
         <div className="mx-auto grid max-w-[1180px] items-start gap-8 md:grid-cols-[minmax(0,1fr)_360px] md:gap-x-20">
           <div>
             <h2 className="font-serif text-4xl font-semibold leading-[0.98] text-brand-white md:text-[50px]">
-              Discover Insights, Trends, And
+              What Our Partners
               <br />
-              Inspiration.
+              Are Saying.
             </h2>
           </div>
           <div className="md:justify-self-end md:pt-2">
             <p className="max-w-[360px] text-[17px] leading-relaxed text-brand-white/80 md:text-[21px]">
-              Explore our latest listings in the most sought-after locations. we
-              have the perfect home for you.
+              From fleet operators to OEM partners and DLF franchisees — real
+              voices on how PositiEV is changing the EV business landscape.
             </p>
           </div>
         </div>
@@ -223,7 +249,7 @@ export function TrendsSection() {
                   </div>
 
                   <div className="inline-flex items-center gap-2 text-brand-dark/80">
-                    <SpheruleMark />
+                    <PartnerMark />
                     <span className="text-[12px] font-semibold">{active.company}</span>
                   </div>
                 </div>

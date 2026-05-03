@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { Container } from '@/components/layout/Container';
 
 const team = [
-  { name: 'Anika Dias', role: 'Lead Manager', image: '/sampleuse.jpg', variant: 'dark' },
-  { name: 'Tiana Korsgaard', role: 'Sales Marketing', image: '/sampleuse.jpg', variant: 'mid' },
-  { name: 'Tiana Donin', role: 'Property Agent', image: '/sampleuse.jpg', variant: 'dark-right' },
+  { name: 'Hiten Pal Saklani', role: 'Chairman & MD', image: '/sampleuse.jpg', variant: 'dark' },
+  { name: 'Amit Vats', role: 'Director & Co-Founder', image: '/sampleuse.jpg', variant: 'mid' },
+  { name: 'Rohit Rathi', role: 'Director & Investor', image: '/sampleuse.jpg', variant: 'dark-right' },
 ];
 
 function TeamCard({ member }) {
@@ -76,7 +76,7 @@ function TeamCard({ member }) {
 
 export function TeamSection() {
   return (
-    <section className="bg-black py-16 md:py-20">
+    <section id="team" className="bg-black py-16 md:py-20">
       <Container>
         <div className="grid items-center gap-10 md:grid-cols-12 md:gap-10">
           {/* Cards */}
@@ -91,18 +91,20 @@ export function TeamSection() {
           {/* Copy */}
           <div className="md:col-span-5">
             <h2 className="font-serif text-4xl font-semibold leading-[1.02] text-brand-white md:text-6xl">
-              Meet Our Expert Team
+              The Team Behind PositiEV
             </h2>
             <p className="mt-4 max-w-[48ch] text-[12px] leading-relaxed text-brand-white/55">
-              our team of experienced professionals is committed to helping you
-              find the perfect home or investment property.
+              Seasoned professionals from automotive, finance, and technology —
+              united by a shared vision to make EV adoption effortless for
+              businesses across India. Backed by a network of 800+ EV companies,
+              financiers, and investors.
             </p>
-            <button
-              type="button"
+            <a
+              href="#contact"
               className="mt-6 inline-flex items-center rounded-full bg-brand-white px-6 py-3 text-[12px] font-semibold text-brand-dark"
             >
-              View All
-            </button>
+              Work With Us
+            </a>
           </div>
         </div>
       </Container>

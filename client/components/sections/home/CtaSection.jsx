@@ -26,20 +26,20 @@ export function CtaSection() {
 
               <div className="relative z-10 max-w-[92%] md:max-w-[640px] mt-14 ml-14">
                 <h2 className="font-serif text-[52px] font-semibold leading-[1.06] text-brand-white md:text-[50px] lg:text-[50px]">
-                  <span className="md:whitespace-nowrap">Start Your Journey To A</span>
+                  <span className="md:whitespace-nowrap">Ready to Power Your</span>
                   <br />
-                  New Home With Luxira!
+                  EV Business with PositiEV?
                 </h2>
                 <p className="mt-5 max-w-[28ch] text-[16px] leading-[1.45] text-brand-white/70 md:text-[18px]">
-                  Luxury homes don&apos;t stay on the market for long! Luxira Real
-                  Estate offers exclusive listings in prime locations.
+                  OEM, dealer, or fleet operator — the right partnership model
+                  is waiting for you. Let&apos;s build something together.
                 </p>
-                <button
-                  type="button"
+                <a
+                  href="#contact"
                   className="mt-7 inline-flex items-center rounded-full bg-brand-light px-6 py-2.5 text-[12px] font-semibold text-brand-dark md:px-7 md:py-3 md:text-[16px]"
                 >
-                  Get Started
-                </button>
+                  Get in Touch
+                </a>
               </div>
             </div>
           </div>
