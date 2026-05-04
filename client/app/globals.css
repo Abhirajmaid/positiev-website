@@ -30,3 +30,16 @@ body {
   background: rgb(30 30 30 / 0.18);
   color: var(--color-brand-dark);
 }
+
+@keyframes contact-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-contact-marquee {
+  animation: contact-marquee 32s linear infinite;
+}

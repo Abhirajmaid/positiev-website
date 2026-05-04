@@ -38,8 +38,8 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      {/* Layer 4 (z-3): all UI content */}
-      <div className="relative z-[3]">
+      {/* Navbar must sit above the full-bleed content layer (same z as next sibling = content wins in paint order and eats clicks). */}
+      <div className="relative z-50">
         <Navbar />
       </div>
 

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 
 const listings = [
@@ -233,12 +234,12 @@ export function DiscoverSection() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="inline-flex items-center rounded-full bg-brand-dark px-7 py-3 text-[12px] font-semibold text-brand-white"
           >
             Partner With Us
-          </a>
+          </Link>
         </div>
       </Container>
     </section>

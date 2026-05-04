@@ -14,6 +14,8 @@ module.exports = {
           light: '#F2F2F2',
           accent: '#16a34a',
           'accent-light': '#dcfce7',
+          coral: '#ff7f50',
+          'coral-deep': '#ff8254',
         },
       },
       fontFamily: {

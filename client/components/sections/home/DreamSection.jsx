@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 
 function Svg({ children, className = '' }) {
@@ -308,12 +309,12 @@ function FeaturedCard({ item }) {
           <div className="text-[18px] font-semibold text-brand-dark md:text-[20px]">
             {item.price}
           </div>
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="mt-6 inline-flex items-center rounded-full bg-brand-dark px-6 py-3 text-[12px] font-semibold text-brand-white"
           >
             Enquire Now
-          </a>
+          </Link>
         </div>
       </div>
     </div>

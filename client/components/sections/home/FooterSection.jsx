@@ -70,7 +70,7 @@ export function FooterSection() {
           <div className="flex items-center justify-between border-b border-white/10 pb-8">
             <Link href="/" className="flex shrink-0 items-center">
               <Image
-                src="/logo_2.png"
+                src="/logo_2_transparent.png"
                 alt="PositiEV Mobility"
                 width={200}
                 height={48}
@@ -142,7 +142,9 @@ export function FooterSection() {
                 Company
               </div>
               <div className="space-y-2 text-[13px] text-brand-white">
-                <div>About Us</div>
+                <Link href="/about" className="block hover:text-brand-white/90">
+                  About Us
+                </Link>
                 <div>Team</div>
                 <div>FAQs</div>
                 <div>Careers</div>

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 
 const team = [
@@ -99,12 +100,12 @@ export function TeamSection() {
               businesses across India. Backed by a network of 800+ EV companies,
               financiers, and investors.
             </p>
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="mt-6 inline-flex items-center rounded-full bg-brand-white px-6 py-3 text-[12px] font-semibold text-brand-dark"
             >
               Work With Us
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

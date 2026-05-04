@@ -1,0 +1,7 @@
+/** Main site nav — shared by home hero navbar and contact page navbar */
+export const mainNavLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Products', href: '/#solutions' },
+  { label: 'About us', href: '/about' },
+  { label: 'Blog', href: '#' },
+];

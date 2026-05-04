@@ -1,3 +1,4 @@
+import { HashContactRedirect } from '@/components/HashContactRedirect';
 import { Hero } from '@/components/sections/home/Hero';
 import { ExperienceSection } from '@/components/sections/home/ExperienceSection';
 import { TeamSection } from '@/components/sections/home/TeamSection';
@@ -11,6 +12,7 @@ import { FooterSection } from '@/components/sections/home/FooterSection';
 export default function HomePage() {
   return (
     <main>
+      <HashContactRedirect />
       <Hero />
       <ExperienceSection />
       <TeamSection />

@@ -2,16 +2,16 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Icon } from '@iconify/react';
 import { Container } from '@/components/layout/Container';
+import { mainNavLinks } from '@/lib/constants/nav';
 
-const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Solutions', href: '#solutions' },
-  { label: 'For OEMs', href: '#for-oems' },
-  { label: 'For Dealers', href: '#for-dealers' },
-  { label: 'Team', href: '#team' },
-];
+function isActiveNavItem(pathname, item) {
+  if (item.href === '/') return pathname === '/';
+  if (item.href === '/about') return pathname === '/about';
+  return false;
+}
 
 function PillLink({ href, active, children }) {
   return (
@@ -30,6 +30,8 @@ function PillLink({ href, active, children }) {
 }
 
 export function Navbar() {
+  const pathname = usePathname();
+
   return (
     <div className="pointer-events-none absolute left-0 right-0 top-0 z-50">
       <Container className="pointer-events-auto relative flex max-w-[1500px] items-center justify-between py-4">
@@ -47,11 +49,11 @@ export function Navbar() {
 
         {/* Center: nav — viewport-centered */}
         <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:flex md:items-center md:justify-center md:gap-2">
-          {navItems.map((item) => (
+          {mainNavLinks.map((item) => (
             <PillLink
               key={item.label}
               href={item.href}
-              active={item.label === 'Home'}
+              active={isActiveNavItem(pathname, item)}
             >
               {item.label}
             </PillLink>
@@ -61,7 +63,7 @@ export function Navbar() {
         {/* Right: contact */}
         <div className="relative z-10 ml-auto flex shrink-0 items-center">
           <Link
-            href="#contact"
+            href="/contact"
             className={[
               'inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-semibold tracking-wide',
               'border border-white/10 bg-white text-black',
