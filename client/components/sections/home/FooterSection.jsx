@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
-import { Container } from '@/components/layout/Container';
 
 function ActionCard({ title, description }) {
   return (
@@ -25,7 +24,11 @@ function ActionCard({ title, description }) {
 export function FooterSection() {
   return (
     <section id="contact" className="bg-black pb-10 pt-0 md:pb-12">
-      <Container>
+      {/*
+        Same horizontal rail as ContactCta / shared CTAs: max-w-[1100px] px-4 so the connect panel
+        and footer columns align with the gray CTA card edges above on pages that use it.
+      */}
+      <div className="mx-auto w-full max-w-[1100px] px-4">
         {/* Connect panel */}
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#1f2023] p-8 shadow-[0_26px_90px_rgba(0,0,0,0.35)] md:p-9">
           <div className="grid items-start gap-10 md:grid-cols-12 md:gap-10">
@@ -161,7 +164,7 @@ export function FooterSection() {
             </div>
           </div>
         </footer>
-      </Container>
+      </div>
     </section>
   );
 }

@@ -10,6 +10,7 @@ import { mainNavLinks } from '@/lib/constants/nav';
 function isActiveNavItem(pathname, item) {
   if (item.href === '/') return pathname === '/';
   if (item.href === '/about') return pathname === '/about';
+  if (item.href === '/solutions') return pathname === '/solutions';
   return false;
 }
 

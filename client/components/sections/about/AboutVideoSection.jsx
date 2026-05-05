@@ -4,7 +4,7 @@ function PlayIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
-      className="ml-1 h-16 w-16 text-white drop-shadow md:h-20 md:w-20"
+      className="ml-0.5 h-12 w-12 text-white drop-shadow sm:h-14 sm:w-14 md:h-16 md:w-16"
       fill="currentColor"
       aria-hidden
     >
@@ -22,13 +22,12 @@ export function AboutVideoSection() {
           <span className="inline-block rounded-full bg-[#FF7F50] px-5 py-2.5 text-xs font-bold uppercase tracking-[0.12em] text-white md:px-6 md:py-3 md:text-sm">
             About Us
           </span>
-          <p className="mt-8 max-w-[46rem] text-lg font-medium leading-snug text-[#4A4A4A] md:mt-10 md:text-2xl md:leading-[1.45]">
+          <p className="mt-8 max-w-[46rem] text-lg font-medium leading-snug text-black/50 md:mt-10 md:text-4xl md:leading-[1.45]">
             Intelligent EV charging systems powered by AI and renewables building a cleaner, more
             connected future with every charge.
           </p>
           <div
-            className="relative mt-10 w-full max-w-[920px] overflow-hidden rounded-[26px] bg-[#E0E0E0] md:mt-12 md:rounded-[28px]"
-            style={{ aspectRatio: '16 / 9' }}
+            className="relative mx-auto mt-10 h-[220px] w-full max-w-[800px] overflow-hidden rounded-[26px] bg-[#E0E0E0] sm:h-[250px] md:mt-12 md:h-[280px] md:rounded-[28px] lg:h-[300px]"
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <PlayIcon />
