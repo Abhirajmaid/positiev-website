@@ -11,6 +11,8 @@ function isActiveNavItem(pathname, item) {
   if (item.href === '/') return pathname === '/';
   if (item.href === '/about') return pathname === '/about';
   if (item.href === '/solutions') return pathname === '/solutions';
+  if (item.href === '/segments') return pathname === '/segments';
+  if (item.href === '/blog') return pathname === '/blog';
   return false;
 }
 
@@ -19,7 +21,7 @@ function PillLink({ href, active, children }) {
     <Link
       href={href}
       className={[
-        'whitespace-nowrap rounded-full px-5 py-3 text-[13px] font-medium leading-none transition md:px-6 md:text-[14px]',
+        'whitespace-nowrap rounded-full px-5 py-3 text-[14px] font-medium leading-none transition md:px-6 md:py-3.5 md:text-[15px]',
         active
           ? 'border border-white/0 bg-white text-[#1E1E1E] shadow-sm'
           : 'border border-white/35 bg-transparent text-white/80 hover:bg-white/10 hover:text-white',
@@ -49,7 +51,7 @@ export function Navbar() {
         </Link>
 
         {/* Center: nav — viewport-centered */}
-        <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:flex md:items-center md:justify-center md:gap-2">
+        <nav className="absolute left-1/2 top-1/2 hidden max-w-[min(92vw,900px)] -translate-x-1/2 -translate-y-1/2 md:flex md:items-center md:justify-center md:gap-1.5 lg:gap-2">
           {mainNavLinks.map((item) => (
             <PillLink
               key={item.label}
@@ -66,7 +68,7 @@ export function Navbar() {
           <Link
             href="/contact"
             className={[
-              'inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-semibold tracking-wide',
+              'inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[14px] font-semibold tracking-wide md:text-[15px]',
               'border border-white/10 bg-white text-black',
               'shadow-[0_14px_55px_rgba(0,0,0,0.35)] hover:bg-white transition',
             ].join(' ')}

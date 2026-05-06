@@ -14,7 +14,7 @@ export function ContactNavbar() {
     <div className="sticky top-0 z-50 bg-transparent py-4">
       <Container className="max-w-[1500px] px-4">
         <div className="flex justify-center">
-          <div className="flex w-full max-w-[min(100%,860px)] items-center justify-between gap-3 rounded-full bg-[#8b8f96] px-4 py-2.5 shadow-sm md:gap-5 md:px-5 md:py-3 lg:max-w-[820px]">
+          <div className="flex w-full max-w-[min(100%,960px)] items-center justify-between gap-3 rounded-full bg-[#8b8f96] px-4 py-2.5 shadow-sm md:gap-4 md:px-5 md:py-3 lg:max-w-[960px]">
             <Link href="/" className="relative z-10 flex shrink-0 items-center">
               <Image
                 src="/logo_2.png"
@@ -26,7 +26,7 @@ export function ContactNavbar() {
               />
             </Link>
 
-            <nav className="hidden items-center justify-center gap-6 text-[12px] font-semibold uppercase tracking-[0.12em] text-white md:flex lg:gap-10">
+            <nav className="hidden items-center justify-center gap-4 text-[13px] font-semibold uppercase tracking-[0.12em] text-white md:flex md:gap-5 lg:gap-7 lg:text-[14px]">
               {mainNavLinks.map((item) => (
                 <Link key={item.href} href={item.href} className="hover:text-white/90">
                   {item.label}
@@ -37,7 +37,7 @@ export function ContactNavbar() {
             <div className="flex items-center justify-end gap-2">
               <Link
                 href="/contact#contact-form"
-                className="hidden rounded-full bg-brand-coral px-5 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-white shadow-sm transition hover:bg-brand-coral/90 md:inline-flex"
+                className="hidden rounded-full bg-brand-coral px-5 py-2 text-[12px] font-bold uppercase tracking-[0.14em] text-white shadow-sm transition hover:bg-brand-coral/90 md:inline-flex lg:text-[13px]"
               >
                 Contact
               </Link>

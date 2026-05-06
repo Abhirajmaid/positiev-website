@@ -2,6 +2,7 @@
 export const mainNavLinks = [
   { label: 'Home', href: '/' },
   { label: 'Solutions', href: '/solutions' },
+  { label: 'Segments', href: '/segments' },
   { label: 'About us', href: '/about' },
   { label: 'Blog', href: '/blog' },
 ];
