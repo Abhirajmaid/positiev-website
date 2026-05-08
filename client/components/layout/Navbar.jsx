@@ -11,7 +11,10 @@ function isActiveNavItem(pathname, item) {
   if (item.href === '/') return pathname === '/';
   if (item.href === '/about') return pathname === '/about';
   if (item.href === '/solutions') return pathname === '/solutions';
+  if (item.href === '/led') return pathname === '/led';
+  if (item.href === '/fleet') return pathname === '/fleet';
   if (item.href === '/segments') return pathname === '/segments';
+  if (item.href === '/oems') return pathname === '/oems';
   if (item.href === '/blog') return pathname === '/blog';
   return false;
 }
@@ -51,7 +54,7 @@ export function Navbar() {
         </Link>
 
         {/* Center: nav — viewport-centered */}
-        <nav className="absolute left-1/2 top-1/2 hidden max-w-[min(92vw,900px)] -translate-x-1/2 -translate-y-1/2 md:flex md:items-center md:justify-center md:gap-1.5 lg:gap-2">
+        <nav className="absolute left-1/2 top-1/2 hidden max-w-[min(95vw,1220px)] -translate-x-1/2 -translate-y-1/2 md:flex md:items-center md:justify-center md:gap-1 lg:gap-1.5">
           {mainNavLinks.map((item) => (
             <PillLink
               key={item.label}

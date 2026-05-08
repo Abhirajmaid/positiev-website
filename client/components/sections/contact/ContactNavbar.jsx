@@ -14,7 +14,7 @@ export function ContactNavbar() {
     <div className="sticky top-0 z-50 bg-transparent py-4">
       <Container className="max-w-[1500px] px-4">
         <div className="flex justify-center">
-          <div className="flex w-full max-w-[min(100%,960px)] items-center justify-between gap-3 rounded-full bg-[#8b8f96] px-4 py-2.5 shadow-sm md:gap-4 md:px-5 md:py-3 lg:max-w-[960px]">
+          <div className="flex w-full max-w-[min(100%,1320px)] items-center justify-between gap-3 rounded-full bg-[#8b8f96] px-4 py-2.5 shadow-sm md:gap-4 md:px-5 md:py-3 lg:max-w-[1320px]">
             <Link href="/" className="relative z-10 flex shrink-0 items-center">
               <Image
                 src="/logo_2.png"
@@ -26,7 +26,7 @@ export function ContactNavbar() {
               />
             </Link>
 
-            <nav className="hidden items-center justify-center gap-4 text-[13px] font-semibold uppercase tracking-[0.12em] text-white md:flex md:gap-5 lg:gap-7 lg:text-[14px]">
+            <nav className="hidden items-center justify-center gap-3.5 text-[13px] font-semibold uppercase tracking-[0.12em] text-white md:flex md:gap-4 lg:gap-5 lg:text-[14px]">
               {mainNavLinks.map((item) => (
                 <Link key={item.href} href={item.href} className="hover:text-white/90">
                   {item.label}
